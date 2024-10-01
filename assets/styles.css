@@ -13,13 +13,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #cc5500; /* Orange header */
+  background-color: #9E4200; /* Orange header */
   color: #fff;
 }
 
 /* Title styling */
 .title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
