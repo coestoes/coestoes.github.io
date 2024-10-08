@@ -1,10 +1,17 @@
 /* Global styles */
-body {
+html, body {
   font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
 }
 
 /* Header styling */
@@ -65,6 +72,7 @@ main {
   margin: 0 auto;
   background-color: #f5f5dc;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Ensure main content fills available space */
 }
 
 /* About page specific styles */
@@ -140,6 +148,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 
 /* Responsive styles */
@@ -154,6 +163,7 @@ footer {
     width: 100%;
     padding: 1rem;
     z-index: 15; /* Ensure the dropdown is above other elements */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for dropdown */
   }
 
   .nav-links.active {
@@ -165,9 +175,10 @@ footer {
   }
 
   header {
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
   }
 
   main {
@@ -201,5 +212,19 @@ footer {
 
   .nav-links li {
     margin: 0.5rem 0;
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex; /* Show links by default on larger screens */
+    background-color: transparent; /* Make sure it's transparent on larger screens */
+    position: relative; /* Reset position */
+    box-shadow: none; /* Remove shadow */
+  }
+
+  .menu-icon {
+    display: none; /* Hide the menu icon on larger screens */
   }
 }
