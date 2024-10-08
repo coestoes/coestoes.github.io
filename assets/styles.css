@@ -13,11 +13,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #9E4200; /* Orange header */
+  background-color: #9E4200; /* Burnt orange header */
   color: #fff;
 }
 
-/* Title styling */
 .title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -44,49 +43,78 @@ header {
   color: #ddd; /* Lighter color on hover */
 }
 
-/* Mobile menu icon */
-.menu-icon {
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none; /* Hidden by default, can be shown for small screens */
+.active {
+  color: #FFD700; /* Optional: Highlight the active page link */
 }
 
 /* Main section for content */
 main {
   padding: 2rem;
-  max-width: 2000px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f5f5dc;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for blog posts or sections on the main page */
-.latest-posts {
+/* About page specific styles */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #003366; /* Navy Blue */
+}
+
+.about-text h2 {
+  color: #cc5500; /* Burnt Orange */
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.social-icons {
   margin-top: 2rem;
 }
 
-.latest-posts h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #003366; /* Navy Blue */
+  transition: color 0.3s;
 }
 
-article {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+.social-icons a:hover {
+  color: #cc5500; /* Burnt Orange hover */
 }
 
-article h3 {
-  font-size: 1.25rem;
-  color: #cc5500; /* Post title in orange */
+.profile-pic {
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
 }
 
-article p {
-  color: #666;
-  font-size: 1rem;
-}
-
-/* Footer styling (optional) */
+/* Footer styling */
 footer {
   text-align: center;
   padding: 1rem;
@@ -100,37 +128,46 @@ footer {
 /* Responsive styles */
 @media (max-width: 768px) {
   .nav-links {
-      display: none; /* Hide navigation links on small screens */
+    display: none; /* Hide navigation links on small screens */
   }
 
   .menu-icon {
-      display: block; /* Show mobile menu icon */
+    display: block; /* Show mobile menu icon */
   }
 
   header {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   main {
-      padding: 1rem;
+    padding: 1rem;
+    max-width: 100%;
   }
 
   .title {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 
   article h3 {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
+  }
+
+  .about-section {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .about-image, .about-text {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .title {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .nav-links li {
-      margin-left: 1rem;
+    margin-left: 1rem;
   }
 }
