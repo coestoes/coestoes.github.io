@@ -21,6 +21,7 @@
             <li><a href="about.html" class="active">About</a></li>
             <li><a href="../blog.html">Blog</a></li>
           </ul>
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
         </nav>
     </header>
 
@@ -47,5 +48,11 @@
         </div>
       </section>
     </main>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+      }
+    </script>
 </body>
 </html>

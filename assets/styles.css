@@ -109,6 +109,7 @@ main {
 }
 
 .profile-pic {
+  width: 100%;
   max-width: 350px;
   height: auto;
   border-radius: 10px;
@@ -129,8 +130,20 @@ footer {
 @media (max-width: 768px) {
   .nav-links {
     display: none; /* Hide navigation links on small screens */
+    flex-direction: column;
+    background-color: #9E4200; /* Same as header color */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10; /* Ensure the dropdown is above other elements */
   }
 
+  .nav-links.active {
+    display: flex;
+  }
+  
   .menu-icon {
     display: block; /* Show mobile menu icon */
   }
@@ -158,7 +171,9 @@ footer {
   }
 
   .about-image, .about-text {
+    flex: 1;
     max-width: 100%;
+    padding: 1rem;
   }
 }
 
