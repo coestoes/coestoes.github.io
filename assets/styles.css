@@ -15,6 +15,8 @@ header {
   padding: 1rem;
   background-color: #9E4200; /* Burnt orange header */
   color: #fff;
+  position: relative;
+  z-index: 10;
 }
 
 .title {
@@ -45,6 +47,14 @@ header {
 
 .active {
   color: #FFD700; /* Optional: Highlight the active page link */
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 20;
 }
 
 /* Main section for content */
@@ -137,20 +147,21 @@ footer {
     left: 0;
     width: 100%;
     padding: 1rem;
-    z-index: 10; /* Ensure the dropdown is above other elements */
+    z-index: 15; /* Ensure the dropdown is above other elements */
   }
 
   .nav-links.active {
     display: flex;
   }
-  
+
   .menu-icon {
     display: block; /* Show mobile menu icon */
   }
 
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 
   main {
@@ -183,6 +194,6 @@ footer {
   }
 
   .nav-links li {
-    margin-left: 1rem;
+    margin: 0.5rem 0;
   }
 }
