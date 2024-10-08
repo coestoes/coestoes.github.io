@@ -80,8 +80,14 @@ main {
   border-radius: 10px;
 }
 
+.about-image {
+  margin-right: 2rem; /* Add space between the image and the text */
+  flex: 1;
+}
+
 .about-text {
   max-width: 600px;
+  flex: 1;
 }
 
 .about-text h1 {
@@ -141,7 +147,7 @@ footer {
   .nav-links {
     display: none; /* Hide navigation links on small screens */
     flex-direction: column;
-    background-color: #9E4200; /* Same as header color */
+    background-color: #ffffff; /* Same as header color */
     position: absolute;
     top: 60px; /* Adjust based on header height */
     left: 0;
