@@ -10,7 +10,19 @@
       body {
         font-family: "Oswald", serif;
       }
+      .latest-posts {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+      .latest-posts-title {
+            display: inline-block;
+            border-bottom: 2px solid #000;
+            padding-bottom: 4px;
+        }
     </style>
+
 </head>
 <body>
     <header>
@@ -27,11 +39,13 @@
 
     <main>
       <section class="latest-posts">
-        <h2>Latest Posts</h2>
-        <article>
-            <h3><a href="blog.html#post1">My Latest Post</a></h3>
-            <p>A brief introduction to the latest post. Click the title to read more.</p>
-        </article>
+        <h2 class="latest-posts-title">Latest Posts</h2>
+        <div class="latest-posts">
+          <article>
+              <h3><a href="blog.html#post1">My Latest Post</a></h3>
+              <p>A brief introduction to the latest post. Click the title to read more.</p>
+          </article>
+        </div>  
         <article>
             <h3><a href="blog.html#post2">Another Recent Post</a></h3>
             <p>Another short summary of a recent post. Click to read the full article.</p>
