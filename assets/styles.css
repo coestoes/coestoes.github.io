@@ -1,4 +1,10 @@
 /* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Universal box-sizing for better alignment */
+}
+
 html, body {
   font-family: 'Oswald', sans-serif;
   margin: 0;
@@ -27,6 +33,8 @@ header {
   z-index: 10;
   width: 100%;
   box-sizing: border-box;
+  top: 0;
+  position: sticky;
 }
 
 .title {
@@ -161,7 +169,7 @@ footer {
     flex-direction: column;
     background-color: #ffffff; /* Same as header color */
     position: absolute;
-    top: 60px; /* Adjust based on header height */
+    top: 100%; /* Adjust based on header height */
     left: 0;
     width: 100%;
     padding: 1rem;
@@ -179,6 +187,7 @@ footer {
 
   .menu-icon {
     display: block; /* Show mobile menu icon */
+    margin-right: 1rem;
   }
 
   header {
@@ -186,6 +195,9 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #9E4200;
   }
 
   main {
@@ -195,6 +207,8 @@ footer {
 
   .title {
     font-size: 1.25rem;
+    flex-grow: 1;
+    margin-left: 1rem;
   }
 
   article h3 {
