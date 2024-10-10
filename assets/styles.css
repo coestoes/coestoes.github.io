@@ -27,7 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #9E4200; /* Burnt orange header */
+  background-color: #3c4d03; /* Burnt orange header */
   color: #fff;
   position: relative;
   z-index: 10;
@@ -169,7 +169,7 @@ footer {
     flex-direction: column;
     background-color: #ffffff; /* Same as header color */
     position: absolute;
-    top: 0; /* Adjust based on header height */
+    top: 60px; /* Adjust based on header height */
     left: 0;
     width: 100%;
     padding: 1rem;
@@ -197,7 +197,7 @@ footer {
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
-    background-color: #9E4200;
+    background-color: #3c4d03;
   }
 
   main {
