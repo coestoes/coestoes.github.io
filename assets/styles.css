@@ -169,7 +169,7 @@ footer {
     flex-direction: column;
     background-color: #ffffff; /* Same as header color */
     position: absolute;
-    top: 100%; /* Adjust based on header height */
+    top: 0; /* Adjust based on header height */
     left: 0;
     width: 100%;
     padding: 1rem;
@@ -203,6 +203,9 @@ footer {
   main {
     padding: 1rem;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .title {
@@ -216,6 +219,7 @@ footer {
   }
 
   .about-section {
+    flex-direction: column;
     max-width: 90%;
     width: 100%;
     margin: 1rem auto;
@@ -224,6 +228,7 @@ footer {
   .about-image {
     margin-right: 0;
     margin-bottom: 1rem;
+    max-width: 100%;
   }
 
   .about-text {
